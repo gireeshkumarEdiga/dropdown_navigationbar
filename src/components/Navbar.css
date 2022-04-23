@@ -1,0 +1,56 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+    padding: 0% 5%;
+}
+
+.subnavdiv {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color:white;
+    padding: 20px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.subnav:hover .subnavdiv{
+    background-color: red;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left:0;
+    background-color: red;
+    width:80%;
+    height: 75px;
+    margin: 0% 10%;
+    z-index: 2;
+}
+
+.subnav-content div {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 15px 15px 15px;
+    color: white;
+    height: 75px;
+    text-decoration: none;
+}
+
+.subnav-content div:hover {
+    background-color: #eee;
+    color: yellow;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+    height: auto
+}
